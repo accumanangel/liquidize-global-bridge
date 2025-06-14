@@ -4,7 +4,7 @@ import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden pt-32">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-gray-900 to-cyan-900/20" />
       
