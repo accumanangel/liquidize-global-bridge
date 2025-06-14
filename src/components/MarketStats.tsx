@@ -2,27 +2,27 @@
 const MarketStats = () => {
   const stats = [
     {
-      number: "40M+",
-      label: "African Diaspora Population",
-      sublabel: "Across US, UK, Canada & EU",
+      number: "5M+",
+      label: "African Diaspora in UK",
+      sublabel: "Primary target market",
       color: "from-purple-400 to-purple-600"
     },
     {
-      number: "$128B",
-      label: "Annual Remittances to Africa", 
-      sublabel: "Growing 5.2% yearly",
+      number: "3M+",
+      label: "African Diaspora in EU", 
+      sublabel: "Expanding European presence",
       color: "from-cyan-400 to-cyan-600"
     },
     {
-      number: "$850B",
-      label: "Estimated Diaspora Wealth",
-      sublabel: "Locked in home country assets",
+      number: "2M+",
+      label: "African Diaspora in USA",
+      sublabel: "Growing North American market",
       color: "from-purple-400 to-cyan-400"
     },
     {
-      number: "73%",
-      label: "Property Ownership Rate",
-      sublabel: "Among African diaspora",
+      number: "$850B",
+      label: "Estimated Asset Value",
+      sublabel: "Locked in home countries",
       color: "from-cyan-400 to-purple-400"
     }
   ];
@@ -34,11 +34,11 @@ const MarketStats = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Massive
             <span className="block bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              Untapped Market
+              Market Opportunity
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            The African diaspora represents one of the world's largest underserved financial markets
+            Targeting the African diaspora across UK, EU, and USA with significant untapped asset value
           </p>
         </div>
 
@@ -61,16 +61,16 @@ const MarketStats = () => {
 
         {/* Market opportunity breakdown */}
         <div className="bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-3xl p-8 border border-purple-500/20">
-          <h3 className="text-2xl font-bold mb-8 text-center">Market Opportunity Breakdown</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">Target Market Breakdown</h3>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <div className="w-8 h-8 bg-purple-500/40 rounded-lg" />
               </div>
-              <h4 className="text-lg font-bold mb-2 text-purple-400">Primary Market</h4>
+              <h4 className="text-lg font-bold mb-2 text-purple-400">United Kingdom</h4>
               <p className="text-gray-300 text-sm">
-                High-income diaspora professionals in finance, tech, and healthcare seeking capital access
+                High-income African professionals in London and major cities with substantial home assets
               </p>
             </div>
 
@@ -78,9 +78,9 @@ const MarketStats = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-500/20 to-cyan-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <div className="w-8 h-8 bg-cyan-500/40 rounded-lg" />
               </div>
-              <h4 className="text-lg font-bold mb-2 text-cyan-400">Secondary Market</h4>
+              <h4 className="text-lg font-bold mb-2 text-cyan-400">European Union</h4>
               <p className="text-gray-300 text-sm">
-                Mid-income immigrants with substantial home country assets seeking business loans
+                African diaspora in Germany, France, and Netherlands seeking capital access
               </p>
             </div>
 
@@ -88,9 +88,9 @@ const MarketStats = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-cyan-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <div className="w-8 h-8 bg-gradient-to-r from-purple-500/40 to-cyan-500/40 rounded-lg" />
               </div>
-              <h4 className="text-lg font-bold mb-2 text-purple-300">Future Expansion</h4>
+              <h4 className="text-lg font-bold mb-2 text-purple-300">United States</h4>
               <p className="text-gray-300 text-sm">
-                Global diaspora communities from Latin America, Asia, and other emerging markets
+                Growing African immigrant community with significant property holdings back home
               </p>
             </div>
           </div>

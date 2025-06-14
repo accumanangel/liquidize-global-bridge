@@ -11,27 +11,27 @@ const ValueProps = () => {
     {
       icon: <Shield className="w-8 h-8 text-blue-400" />,
       title: "Self Custody", 
-      description: "You maintain full control of your assets with non-custodial solutions"
+      description: "You maintain full control of your LQT tokens with non-custodial solutions"
     },
     {
       icon: <ShieldCheck className="w-8 h-8 text-purple-400" />,
       title: "Regulation Ready",
-      description: "Built with compliance frameworks for global financial regulations"
+      description: "Built with compliance frameworks for UK, EU, and international regulations"
     },
     {
       icon: <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-orange-500 rounded-lg flex items-center justify-center">🔒</div>,
-      title: "Bank-Grade Security",
+      title: "Enhanced Security",
       description: "Multi-signature wallets and enterprise-level security protocols"
     },
     {
       icon: <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-lg flex items-center justify-center">🌍</div>,
-      title: "Global Access",
-      description: "Access your assets from anywhere, anytime, in any supported currency"
+      title: "Cross-Border",
+      description: "Access loans from anywhere using property from anywhere in the world"
     },
     {
-      icon: <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-500 rounded-lg flex items-center justify-center">💎</div>,
-      title: "Transparent Pricing",
-      description: "No hidden fees, clear terms, and competitive interest rates"
+      icon: <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-500 rounded-lg flex items-center justify-center">💰</div>,
+      title: "Low Commission",
+      description: "Only 2% commission per transaction with transparent pricing"
     }
   ];
 
@@ -46,7 +46,7 @@ const ValueProps = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Built for the modern global citizen with cutting-edge technology and user-first design
+            Built for the diaspora community with cutting-edge blockchain technology and user-first design
           </p>
         </div>
 
@@ -68,24 +68,24 @@ const ValueProps = () => {
 
         {/* Trust indicators */}
         <div className="mt-16 bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-3xl p-8 border border-purple-500/20">
-          <h3 className="text-2xl font-bold mb-8 text-center">Trusted & Secure</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">Revenue Model & Funding</h3>
           
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-green-400 mb-2">256-bit</div>
-              <div className="text-sm text-gray-300">Encryption</div>
+              <div className="text-3xl font-bold text-green-400 mb-2">2%</div>
+              <div className="text-sm text-gray-300">Commission Rate</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-400 mb-2">SOC 2</div>
-              <div className="text-sm text-gray-300">Certified</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">£100K</div>
+              <div className="text-sm text-gray-300">Seed Funding</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-400 mb-2">99.9%</div>
-              <div className="text-sm text-gray-300">Uptime</div>
+              <div className="text-3xl font-bold text-purple-400 mb-2">3</div>
+              <div className="text-sm text-gray-300">Country Incorporation</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cyan-400 mb-2">24/7</div>
-              <div className="text-sm text-gray-300">Monitoring</div>
+              <div className="text-3xl font-bold text-cyan-400 mb-2">MVP</div>
+              <div className="text-sm text-gray-300">Development Ready</div>
             </div>
           </div>
         </div>

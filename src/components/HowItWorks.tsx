@@ -5,33 +5,51 @@ const HowItWorks = () => {
   const steps = [
     {
       number: "01",
-      title: "Sign Up",
-      description: "Create your LiQuiTize account with secure KYC verification",
+      title: "Account Creation",
+      description: "Create your secure LiQuiTize account with comprehensive KYC validation",
       icon: "👤"
     },
     {
       number: "02", 
-      title: "Verify",
-      description: "Upload property documents for AI-powered verification",
+      title: "Asset Verification",
+      description: "Our partners verify your property assets and legal deeds",
       icon: "✅"
     },
     {
       number: "03",
-      title: "Tokenize", 
-      description: "Transform your property into a blockchain-secured digital asset",
-      icon: "🏠"
+      title: "Property Valuation", 
+      description: "Professional valuation of your property to determine accurate market value",
+      icon: "📊"
     },
     {
       number: "04",
-      title: "Borrow",
-      description: "Access instant loans using your tokenized property as collateral",
-      icon: "💰"
+      title: "LQT Token Minting",
+      description: "Your verified assets are minted as LQT tokens representing their value",
+      icon: "🏠"
     },
     {
       number: "05",
-      title: "Repay",
-      description: "Flexible repayment options with automated smart contract management",
+      title: "Collateral Lock",
+      description: "Lock your LQT tokens as collateral to secure your loan",
+      icon: "🔒"
+    },
+    {
+      number: "06",
+      title: "Loan Release",
+      description: "Receive instant loan disbursement once collateral is secured",
+      icon: "💰"
+    },
+    {
+      number: "07",
+      title: "Loan Repayment",
+      description: "Repay your loan plus interest through our flexible payment system",
       icon: "🔄"
+    },
+    {
+      number: "08",
+      title: "Token Return",
+      description: "Your LQT tokens are unlocked and returned once loan is fully repaid",
+      icon: "🎉"
     }
   ];
 
@@ -44,7 +62,7 @@ const HowItWorks = () => {
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"> Works</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Five simple steps to unlock the value of your global assets
+            Eight simple steps to unlock liquidity from your global property assets
           </p>
         </div>
 
@@ -81,19 +99,19 @@ const HowItWorks = () => {
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-3xl p-8 border border-purple-500/20">
             <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
-            <p className="text-gray-300 mb-6">Join thousands of users already leveraging their global assets</p>
+            <p className="text-gray-300 mb-6">Join the diaspora community already leveraging their global assets</p>
             <div className="flex items-center justify-center space-x-4 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
                 <Check className="w-4 h-4 text-green-400" />
-                <span>No hidden fees</span>
+                <span>2% commission only</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Check className="w-4 h-4 text-green-400" />
-                <span>Bank-grade security</span>
+                <span>Self-custody tokens</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Check className="w-4 h-4 text-green-400" />
-                <span>24/7 support</span>
+                <span>Instant settlement</span>
               </div>
             </div>
           </div>

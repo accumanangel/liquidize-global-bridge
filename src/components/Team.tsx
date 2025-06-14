@@ -2,25 +2,25 @@
 const Team = () => {
   const founders = [
     {
-      name: "Alex Thompson",
-      role: "CEO & Co-Founder",
-      background: "Former Goldman Sachs VP, Harvard MBA",
+      name: "Emmanuel Machaya",
+      role: "CEO & Founder",
+      background: "4 years Business Development at Flux",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      bio: "10+ years in traditional finance, specializing in emerging markets and fintech innovation."
+      bio: "Blockchain expert with extensive experience in business development and strategic partnerships in the fintech sector."
     },
     {
-      name: "Priya Patel", 
-      role: "CTO & Co-Founder",
-      background: "Ex-Stripe Engineering Lead, MIT CS",
+      name: "Justice Mukaro", 
+      role: "COO & Co-Founder",
+      background: "3 years Project Management",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b5bb?w=400&h=400&fit=crop&crop=face",
-      bio: "Led blockchain infrastructure teams at top fintech companies, expert in DeFi protocols."
+      bio: "Award-winning innovator and data analyst with deep expertise in project management and operational excellence."
     },
     {
-      name: "David Chen",
-      role: "CPO & Co-Founder", 
-      background: "Former Coinbase Product Manager, Stanford MBA",
+      name: "Accuman A. Mafuva",
+      role: "CTO & Co-Founder", 
+      background: "5+ years Software Engineering",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      bio: "Product strategist with deep crypto expertise and passion for financial inclusion."
+      bio: "Full-stack wizard and UI/UX designer with extensive experience in building scalable software solutions."
     }
   ];
 
@@ -35,7 +35,7 @@ const Team = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            World-class expertise in finance, technology, and emerging markets
+            Experienced professionals with deep expertise in blockchain, fintech, and emerging markets
           </p>
         </div>
 
@@ -76,24 +76,24 @@ const Team = () => {
 
         {/* Team credentials */}
         <div className="mt-16 bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-3xl p-8 border border-purple-500/20">
-          <h3 className="text-2xl font-bold mb-8 text-center">Backed by Experience</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">Proven Track Record</h3>
           
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-purple-400 mb-2">25+</div>
+              <div className="text-3xl font-bold text-purple-400 mb-2">12+</div>
               <div className="text-sm text-gray-300">Years Combined Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cyan-400 mb-2">$50B+</div>
-              <div className="text-sm text-gray-300">Assets Managed Previously</div>
+              <div className="text-3xl font-bold text-cyan-400 mb-2">100+</div>
+              <div className="text-sm text-gray-300">Projects Delivered</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-purple-400 mb-2">3</div>
-              <div className="text-sm text-gray-300">Successful Exits</div>
+              <div className="text-sm text-gray-300">Successful Ventures</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cyan-400 mb-2">2</div>
-              <div className="text-sm text-gray-300">Patents Filed</div>
+              <div className="text-3xl font-bold text-cyan-400 mb-2">1</div>
+              <div className="text-sm text-gray-300">Award-Winning Innovator</div>
             </div>
           </div>
         </div>
