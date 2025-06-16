@@ -150,23 +150,23 @@ const StyleGuide = () => {
             <div className="space-y-4">
               <div className="border-l-4 border-orange-500 pl-4">
                 <h1 className="text-5xl md:text-7xl font-bold text-gray-900">Heading 1</h1>
-                <p className="text-sm text-gray-600 mt-1">text-5xl md:text-7xl font-bold (Hero Headlines)</p>
+                <p className="text-sm text-gray-600 mt-1">text-5xl (48px) md:text-7xl (72px) font-bold (Hero Headlines)</p>
               </div>
               <div className="border-l-4 border-orange-500 pl-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Heading 2</h2>
-                <p className="text-sm text-gray-600 mt-1">text-4xl md:text-5xl font-bold (Section Headers)</p>
+                <p className="text-sm text-gray-600 mt-1">text-4xl (36px) md:text-5xl (48px) font-bold (Section Headers)</p>
               </div>
               <div className="border-l-4 border-orange-500 pl-4">
                 <h3 className="text-2xl font-bold text-gray-900">Heading 3</h3>
-                <p className="text-sm text-gray-600 mt-1">text-2xl font-bold (Card Titles)</p>
+                <p className="text-sm text-gray-600 mt-1">text-2xl (24px) font-bold (Card Titles)</p>
               </div>
               <div className="border-l-4 border-orange-500 pl-4">
                 <h4 className="text-xl font-bold text-gray-900">Heading 4</h4>
-                <p className="text-sm text-gray-600 mt-1">text-xl font-bold (Subsection Headers)</p>
+                <p className="text-sm text-gray-600 mt-1">text-xl (20px) font-bold (Subsection Headers)</p>
               </div>
               <div className="border-l-4 border-orange-500 pl-4">
                 <h5 className="text-lg font-semibold text-gray-900">Heading 5</h5>
-                <p className="text-sm text-gray-600 mt-1">text-lg font-semibold (Small Headers)</p>
+                <p className="text-sm text-gray-600 mt-1">text-lg (18px) font-semibold (Small Headers)</p>
               </div>
             </div>
           </div>
@@ -176,20 +176,24 @@ const StyleGuide = () => {
             <h3 className="text-xl font-semibold mb-4 text-gray-800">Body Text</h3>
             <div className="space-y-4">
               <div className="border-l-4 border-blue-500 pl-4">
-                <p className="text-xl text-gray-600">Large Body Text - text-xl text-gray-600</p>
+                <p className="text-xl text-gray-600">Large Body Text - text-xl (20px) text-gray-600</p>
                 <p className="text-sm text-gray-500 mt-1">Used for hero subtitles and important descriptions</p>
               </div>
               <div className="border-l-4 border-blue-500 pl-4">
-                <p className="text-lg text-gray-600">Medium Body Text - text-lg text-gray-600</p>
+                <p className="text-lg text-gray-600">Medium Body Text - text-lg (18px) text-gray-600</p>
                 <p className="text-sm text-gray-500 mt-1">Used for card descriptions and feature text</p>
               </div>
               <div className="border-l-4 border-blue-500 pl-4">
-                <p className="text-base text-gray-600">Regular Body Text - text-base text-gray-600</p>
+                <p className="text-base text-gray-600">Regular Body Text - text-base (16px) text-gray-600</p>
                 <p className="text-sm text-gray-500 mt-1">Standard paragraph text</p>
               </div>
               <div className="border-l-4 border-blue-500 pl-4">
-                <p className="text-sm text-gray-600">Small Body Text - text-sm text-gray-600</p>
+                <p className="text-sm text-gray-600">Small Body Text - text-sm (14px) text-gray-600</p>
                 <p className="text-xs text-gray-500 mt-1">Used for captions and secondary information</p>
+              </div>
+              <div className="border-l-4 border-blue-500 pl-4">
+                <p className="text-xs text-gray-600">Extra Small Text - text-xs (12px) text-gray-600</p>
+                <p className="text-xs text-gray-500 mt-1">Used for fine print and metadata</p>
               </div>
             </div>
           </div>
@@ -273,7 +277,7 @@ const StyleGuide = () => {
             {/* Primary Buttons */}
             <div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Primary Buttons</h3>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 items-center">
                 <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 text-lg font-medium rounded-full">
                   Primary Large
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -285,15 +289,36 @@ const StyleGuide = () => {
                   Primary Small
                 </Button>
               </div>
-              <div className="mt-2 text-sm text-gray-600">
-                <p>Classes: bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-full</p>
+              <div className="mt-4 bg-gray-50 p-4 rounded-lg">
+                <h4 className="font-semibold mb-2">Button Specifications:</h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <p className="font-medium">Large Button:</p>
+                    <p>Height: 48px (py-4 = 16px top/bottom + text height)</p>
+                    <p>Padding: 32px horizontal (px-8)</p>
+                    <p>Font: 18px (text-lg) font-medium</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Medium Button:</p>
+                    <p>Height: 40px (py-2 = 8px top/bottom + text height)</p>
+                    <p>Padding: 24px horizontal (px-6)</p>
+                    <p>Font: 16px (text-base) font-medium</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Small Button:</p>
+                    <p>Height: 36px (default small size)</p>
+                    <p>Padding: 12px horizontal (px-3)</p>
+                    <p>Font: 14px (text-sm) font-medium</p>
+                  </div>
+                </div>
+                <p className="mt-2 text-gray-600">Classes: bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-full</p>
               </div>
             </div>
 
             {/* Secondary Buttons */}
             <div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Secondary Buttons</h3>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 items-center">
                 <Button variant="outline" size="lg" className="border-2 border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50 px-8 py-4 text-lg font-medium rounded-full">
                   Secondary Large
                 </Button>
@@ -304,8 +329,29 @@ const StyleGuide = () => {
                   Secondary Small
                 </Button>
               </div>
-              <div className="mt-2 text-sm text-gray-600">
-                <p>Classes: border-2 border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50 rounded-full</p>
+              <div className="mt-4 bg-gray-50 p-4 rounded-lg">
+                <h4 className="font-semibold mb-2">Secondary Button Specifications:</h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <p className="font-medium">Large Button:</p>
+                    <p>Height: 48px (py-4 = 16px top/bottom + text height)</p>
+                    <p>Padding: 32px horizontal (px-8)</p>
+                    <p>Border: 2px solid #d1d5db</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Medium Button:</p>
+                    <p>Height: 40px (py-2 = 8px top/bottom + text height)</p>
+                    <p>Padding: 24px horizontal (px-6)</p>
+                    <p>Border: 2px solid #d1d5db</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Small Button:</p>
+                    <p>Height: 36px (default small size)</p>
+                    <p>Padding: 12px horizontal (px-3)</p>
+                    <p>Border: 2px solid #d1d5db</p>
+                  </div>
+                </div>
+                <p className="mt-2 text-gray-600">Classes: border-2 border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50 rounded-full</p>
               </div>
             </div>
           </div>
@@ -327,6 +373,7 @@ const StyleGuide = () => {
               </p>
               <div className="mt-4 text-sm text-gray-500">
                 <p>Classes: bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-lg</p>
+                <p>Padding: 32px (p-8), Border Radius: 24px (rounded-3xl)</p>
               </div>
             </div>
 
@@ -341,6 +388,7 @@ const StyleGuide = () => {
               </p>
               <div className="mt-4 text-sm text-gray-500">
                 <p>Classes: bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-200</p>
+                <p>Padding: 32px (p-8), Border Radius: 24px (rounded-3xl)</p>
               </div>
             </div>
 
@@ -355,6 +403,7 @@ const StyleGuide = () => {
               </p>
               <div className="mt-4 text-sm text-gray-400">
                 <p>Classes: bg-gradient-to-r from-gray-900 to-gray-800 p-8 rounded-3xl text-white</p>
+                <p>Padding: 32px (p-8), Border Radius: 24px (rounded-3xl)</p>
               </div>
             </div>
 
@@ -369,6 +418,7 @@ const StyleGuide = () => {
               </p>
               <div className="mt-4 text-sm text-gray-500">
                 <p>Classes: bg-white/60 backdrop-blur-sm border border-gray-200 p-8 rounded-3xl</p>
+                <p>Padding: 32px (p-8), Border Radius: 24px (rounded-3xl)</p>
               </div>
             </div>
           </div>
@@ -385,15 +435,15 @@ const StyleGuide = () => {
               <div className="space-y-4">
                 <div className="p-4 border border-gray-200 rounded-lg">
                   <p className="font-medium">Standard Border</p>
-                  <p className="text-sm text-gray-600">border border-gray-200</p>
+                  <p className="text-sm text-gray-600">border border-gray-200 (1px solid #e5e7eb)</p>
                 </div>
                 <div className="p-4 border-2 border-gray-300 rounded-lg">
                   <p className="font-medium">Thick Border</p>
-                  <p className="text-sm text-gray-600">border-2 border-gray-300</p>
+                  <p className="text-sm text-gray-600">border-2 border-gray-300 (2px solid #d1d5db)</p>
                 </div>
                 <div className="p-4 border-l-4 border-orange-500 bg-gray-50 rounded-lg">
                   <p className="font-medium">Accent Left Border</p>
-                  <p className="text-sm text-gray-600">border-l-4 border-orange-500</p>
+                  <p className="text-sm text-gray-600">border-l-4 border-orange-500 (4px left #f97316)</p>
                 </div>
               </div>
             </div>
@@ -404,19 +454,19 @@ const StyleGuide = () => {
               <div className="space-y-4">
                 <div className="p-4 bg-white shadow-sm rounded-lg border border-gray-200">
                   <p className="font-medium">Small Shadow</p>
-                  <p className="text-sm text-gray-600">shadow-sm</p>
+                  <p className="text-sm text-gray-600">shadow-sm (0 1px 2px rgba(0,0,0,0.05))</p>
                 </div>
                 <div className="p-4 bg-white shadow-lg rounded-lg">
                   <p className="font-medium">Large Shadow</p>
-                  <p className="text-sm text-gray-600">shadow-lg</p>
+                  <p className="text-sm text-gray-600">shadow-lg (0 10px 15px rgba(0,0,0,0.1))</p>
                 </div>
                 <div className="p-4 bg-white shadow-xl rounded-lg">
                   <p className="font-medium">Extra Large Shadow</p>
-                  <p className="text-sm text-gray-600">shadow-xl</p>
+                  <p className="text-sm text-gray-600">shadow-xl (0 20px 25px rgba(0,0,0,0.1))</p>
                 </div>
                 <div className="p-4 bg-white shadow-2xl rounded-lg">
                   <p className="font-medium">2XL Shadow</p>
-                  <p className="text-sm text-gray-600">shadow-2xl</p>
+                  <p className="text-sm text-gray-600">shadow-2xl (0 25px 50px rgba(0,0,0,0.25))</p>
                 </div>
               </div>
             </div>
@@ -446,7 +496,7 @@ const StyleGuide = () => {
             <div className="text-center">
               <div className="w-full h-24 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mb-2"></div>
               <p className="font-medium">Full</p>
-              <p className="text-sm text-gray-600">rounded-full</p>
+              <p className="text-sm text-gray-600">rounded-full (9999px)</p>
             </div>
           </div>
         </section>
@@ -455,14 +505,21 @@ const StyleGuide = () => {
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-gray-900">Form Elements</h2>
           
-          <div className="max-w-md space-y-4">
+          <div className="max-w-md space-y-6">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Standard Input</label>
               <Input 
                 placeholder="Enter your email"
                 className="w-full h-12 px-4 border-2 border-gray-200 rounded-lg focus:border-orange-500 focus:ring-0"
               />
-              <p className="text-sm text-gray-600 mt-1">Classes: h-12 px-4 border-2 border-gray-200 rounded-lg focus:border-orange-500</p>
+              <div className="mt-2 text-sm text-gray-600 bg-gray-50 p-3 rounded">
+                <p className="font-medium">Specifications:</p>
+                <p>Height: 48px (h-12)</p>
+                <p>Padding: 16px horizontal (px-4)</p>
+                <p>Border: 2px solid #e5e7eb</p>
+                <p>Focus: 2px solid #f97316</p>
+                <p>Classes: h-12 px-4 border-2 border-gray-200 rounded-lg focus:border-orange-500</p>
+              </div>
             </div>
             
             <div>
@@ -471,7 +528,14 @@ const StyleGuide = () => {
                 placeholder="Enter your email"
                 className="w-full h-12 px-4 border-2 border-gray-200 rounded-full focus:border-orange-500 focus:ring-0"
               />
-              <p className="text-sm text-gray-600 mt-1">Classes: h-12 px-4 border-2 border-gray-200 rounded-full focus:border-orange-500</p>
+              <div className="mt-2 text-sm text-gray-600 bg-gray-50 p-3 rounded">
+                <p className="font-medium">Specifications:</p>
+                <p>Height: 48px (h-12)</p>
+                <p>Padding: 16px horizontal (px-4)</p>
+                <p>Border: 2px solid #e5e7eb</p>
+                <p>Border Radius: Full (rounded-full)</p>
+                <p>Classes: h-12 px-4 border-2 border-gray-200 rounded-full focus:border-orange-500</p>
+              </div>
             </div>
           </div>
         </section>
@@ -538,6 +602,7 @@ const StyleGuide = () => {
                 </span>
               </div>
               <p className="text-sm text-gray-600">Primary Logo (Light Background)</p>
+              <p className="text-xs text-gray-500 mt-1">Icon: 40px × 40px, Text: 24px font-bold</p>
             </div>
 
             {/* Dark Background Logo */}
@@ -552,6 +617,7 @@ const StyleGuide = () => {
                 </span>
               </div>
               <p className="text-sm text-gray-300">Logo on Dark Background</p>
+              <p className="text-xs text-gray-400 mt-1">Icon: 40px × 40px, Text: 24px font-bold white</p>
             </div>
 
             {/* Icon Only */}
@@ -563,6 +629,7 @@ const StyleGuide = () => {
                 </div>
               </div>
               <p className="text-sm text-gray-600">Icon Only</p>
+              <p className="text-xs text-gray-500 mt-1">Size: 48px × 48px</p>
             </div>
           </div>
         </section>
@@ -591,12 +658,15 @@ const StyleGuide = () => {
               <div className="space-y-2">
                 <div className="p-3 bg-gray-50 rounded">
                   <p className="font-medium">Fast: duration-200 (200ms)</p>
+                  <p className="text-sm text-gray-600">For quick interactions like button hovers</p>
                 </div>
                 <div className="p-3 bg-gray-50 rounded">
                   <p className="font-medium">Standard: duration-300 (300ms)</p>
+                  <p className="text-sm text-gray-600">Default for most animations</p>
                 </div>
                 <div className="p-3 bg-gray-50 rounded">
                   <p className="font-medium">Slow: duration-500 (500ms)</p>
+                  <p className="text-sm text-gray-600">For complex state changes</p>
                 </div>
               </div>
             </div>
