@@ -1,65 +1,70 @@
-
-import { Shield, ShieldCheck } from "lucide-react";
+import { Shield, Zap, Globe, Lock, DollarSign, Users } from "lucide-react";
 
 const ValueProps = () => {
   const features = [
     {
-      icon: <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-500 rounded-lg flex items-center justify-center">⚡</div>,
+      icon: <Zap className="w-8 h-8 text-white" />,
       title: "Instant Settlement",
-      description: "Smart contracts enable loan disbursement in minutes, not weeks"
+      description: "Smart contracts enable loan disbursement in minutes, not weeks",
+      gradient: "from-yellow-500 to-orange-500"
     },
     {
-      icon: <Shield className="w-8 h-8 text-blue-400" />,
+      icon: <Shield className="w-8 h-8 text-white" />,
       title: "Self Custody", 
-      description: "You maintain full control of your LQT tokens with non-custodial solutions"
+      description: "You maintain full control of your LQT tokens with non-custodial solutions",
+      gradient: "from-blue-500 to-cyan-500"
     },
     {
-      icon: <ShieldCheck className="w-8 h-8 text-purple-400" />,
-      title: "Regulation Ready",
-      description: "Built with compliance frameworks for UK, EU, and international regulations"
-    },
-    {
-      icon: <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-orange-500 rounded-lg flex items-center justify-center">🔒</div>,
+      icon: <Lock className="w-8 h-8 text-white" />,
       title: "Enhanced Security",
-      description: "Multi-signature wallets and enterprise-level security protocols"
+      description: "Multi-signature wallets and enterprise-level security protocols",
+      gradient: "from-purple-500 to-pink-500"
     },
     {
-      icon: <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-lg flex items-center justify-center">🌍</div>,
+      icon: <Globe className="w-8 h-8 text-white" />,
       title: "Cross-Border",
-      description: "Access loans from anywhere using property from anywhere in the world"
+      description: "Access loans from anywhere using property from anywhere in the world",
+      gradient: "from-green-500 to-emerald-500"
     },
     {
-      icon: <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-500 rounded-lg flex items-center justify-center">💰</div>,
-      title: "Low Commission",
-      description: "Only 2% commission per transaction with transparent pricing"
+      icon: <DollarSign className="w-8 h-8 text-white" />,
+      title: "Competitive Rates",
+      description: "Transparent pricing with competitive interest rates and minimal fees",
+      gradient: "from-indigo-500 to-blue-500"
+    },
+    {
+      icon: <Users className="w-8 h-8 text-white" />,
+      title: "Regulation Ready",
+      description: "Built with compliance frameworks for UK, EU, and international regulations",
+      gradient: "from-red-500 to-pink-500"
     }
   ];
 
   return (
-    <section className="py-20 px-6 relative">
+    <section id="benefits" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
             Why Choose
-            <span className="block bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              LiQuiTize
+            <span className="block bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              Liquitize
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Built for the diaspora community with cutting-edge blockchain technology and user-first design
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-gray-700/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 group">
-              <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div key={index} className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div className={`w-16 h-16 bg-gradient-to-br ${feature.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold mb-4 text-white">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">
                 {feature.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 {feature.description}
               </p>
             </div>
@@ -67,25 +72,25 @@ const ValueProps = () => {
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-16 bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-3xl p-8 border border-purple-500/20">
-          <h3 className="text-2xl font-bold mb-8 text-center">Revenue Model & Funding</h3>
+        <div className="mt-16 bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
+          <h3 className="text-2xl font-bold mb-8 text-center text-gray-900">Trusted by the Diaspora Community</h3>
           
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-green-400 mb-2">2%</div>
-              <div className="text-sm text-gray-300">Commission Rate</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2">10M+</div>
+              <div className="text-sm text-gray-600">Target Diaspora Members</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-400 mb-2">£100K</div>
-              <div className="text-sm text-gray-300">Seed Funding</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent mb-2">$850B</div>
+              <div className="text-sm text-gray-600">Addressable Asset Value</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-400 mb-2">3</div>
-              <div className="text-sm text-gray-300">Country Incorporation</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent mb-2">3</div>
+              <div className="text-sm text-gray-600">Primary Markets</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cyan-400 mb-2">MVP</div>
-              <div className="text-sm text-gray-300">Development Ready</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-2">24/7</div>
+              <div className="text-sm text-gray-600">Global Access</div>
             </div>
           </div>
         </div>

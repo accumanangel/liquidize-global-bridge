@@ -1,4 +1,3 @@
-
 const Team = () => {
   const founders = [
     {
@@ -25,26 +24,26 @@ const Team = () => {
   ];
 
   return (
-    <section className="py-20 px-6 relative">
+    <section id="about" className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
             Meet the
-            <span className="block bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
               Founding Team
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Experienced professionals with deep expertise in blockchain, fintech, and emerging markets
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {founders.map((founder, index) => (
-            <div key={index} className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-gray-700/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 group">
+            <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 group text-center">
               {/* Profile Image */}
               <div className="mb-6">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gradient-to-r from-purple-500 to-cyan-500 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-24 h-24 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-gradient-to-r from-orange-500 to-red-500 group-hover:scale-110 transition-transform duration-300">
                   <img 
                     src={founder.image} 
                     alt={founder.name}
@@ -54,20 +53,20 @@ const Team = () => {
               </div>
 
               {/* Name & Role */}
-              <div className="text-center mb-4">
-                <h3 className="text-xl font-bold mb-2 text-white">
+              <div className="mb-4">
+                <h3 className="text-xl font-bold mb-2 text-gray-900">
                   {founder.name}
                 </h3>
-                <div className="text-purple-400 font-semibold mb-2">
+                <div className="text-orange-500 font-semibold mb-2">
                   {founder.role}
                 </div>
-                <div className="text-sm text-cyan-400 mb-4">
+                <div className="text-sm text-blue-500 mb-4">
                   {founder.background}
                 </div>
               </div>
 
               {/* Bio */}
-              <p className="text-gray-300 text-sm leading-relaxed text-center">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 {founder.bio}
               </p>
             </div>
@@ -75,24 +74,24 @@ const Team = () => {
         </div>
 
         {/* Team credentials */}
-        <div className="mt-16 bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-3xl p-8 border border-purple-500/20">
+        <div className="mt-16 bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-8 text-white">
           <h3 className="text-2xl font-bold mb-8 text-center">Proven Track Record</h3>
           
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-purple-400 mb-2">12+</div>
+              <div className="text-3xl font-bold text-orange-400 mb-2">12+</div>
               <div className="text-sm text-gray-300">Years Combined Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cyan-400 mb-2">100+</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">100+</div>
               <div className="text-sm text-gray-300">Projects Delivered</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-400 mb-2">3</div>
+              <div className="text-3xl font-bold text-green-400 mb-2">3</div>
               <div className="text-sm text-gray-300">Successful Ventures</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cyan-400 mb-2">1</div>
+              <div className="text-3xl font-bold text-purple-400 mb-2">1</div>
               <div className="text-sm text-gray-300">Award-Winning Innovator</div>
             </div>
           </div>
