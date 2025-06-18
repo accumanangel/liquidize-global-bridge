@@ -15,6 +15,236 @@ const StyleGuide = () => {
 
       <div className="max-w-6xl mx-auto px-6 py-12">
         
+        {/* Hero Section Background */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-gray-900">Hero Section Background</h2>
+          
+          {/* Main Background */}
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-4 text-gray-800">Main Background Gradient</h3>
+            <div className="relative min-h-[400px] bg-gradient-to-br from-gray-50 to-white rounded-3xl border border-gray-200 p-8 overflow-hidden">
+              {/* Background Elements */}
+              <div className="absolute inset-0">
+                <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-orange-200/30 to-red-200/30 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-blue-200/30 to-cyan-200/30 rounded-full blur-3xl"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-2xl"></div>
+              </div>
+              
+              {/* Content overlay */}
+              <div className="relative z-10 text-center">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Hero Background Preview</h3>
+                <p className="text-gray-600">This shows the complete hero section background with all gradient elements</p>
+              </div>
+            </div>
+            
+            {/* Implementation Code */}
+            <div className="mt-6 bg-gray-900 text-white p-6 rounded-lg overflow-x-auto">
+              <h4 className="text-lg font-semibold mb-4 text-green-400">HTML Structure:</h4>
+              <pre className="text-sm text-gray-300 whitespace-pre-wrap">
+{`<section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+  {/* Background Elements */}
+  <div className="absolute inset-0">
+    <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-orange-200/30 to-red-200/30 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-blue-200/30 to-cyan-200/30 rounded-full blur-3xl"></div>
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-2xl"></div>
+  </div>
+
+  {/* Your content goes here */}
+  <div className="relative z-10 max-w-7xl mx-auto text-center pt-20">
+    <!-- Hero content -->
+  </div>
+</section>`}
+              </pre>
+            </div>
+          </div>
+
+          {/* Individual Background Elements */}
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-6 text-gray-800">Individual Background Elements</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Orange Gradient Blob */}
+              <div className="bg-white border border-gray-200 rounded-2xl p-6">
+                <div className="relative h-32 bg-gray-50 rounded-lg overflow-hidden mb-4">
+                  <div className="absolute top-4 left-4 w-24 h-24 bg-gradient-to-br from-orange-200/30 to-red-200/30 rounded-full blur-xl"></div>
+                </div>
+                <h4 className="font-semibold mb-2">Orange Gradient Blob</h4>
+                <div className="text-sm space-y-1">
+                  <p><strong>Size:</strong> 288px × 288px (w-72 h-72)</p>
+                  <p><strong>Position:</strong> top-20 left-10</p>
+                  <p><strong>Gradient:</strong> from-orange-200/30 to-red-200/30</p>
+                  <p><strong>Hex:</strong> #fed7aa4d → #fecaca4d</p>
+                  <p><strong>Blur:</strong> blur-3xl (48px)</p>
+                  <p><strong>Shape:</strong> rounded-full</p>
+                </div>
+              </div>
+
+              {/* Blue Gradient Blob */}
+              <div className="bg-white border border-gray-200 rounded-2xl p-6">
+                <div className="relative h-32 bg-gray-50 rounded-lg overflow-hidden mb-4">
+                  <div className="absolute bottom-4 right-4 w-32 h-32 bg-gradient-to-br from-blue-200/30 to-cyan-200/30 rounded-full blur-xl"></div>
+                </div>
+                <h4 className="font-semibold mb-2">Blue Gradient Blob</h4>
+                <div className="text-sm space-y-1">
+                  <p><strong>Size:</strong> 384px × 384px (w-96 h-96)</p>
+                  <p><strong>Position:</strong> bottom-20 right-10</p>
+                  <p><strong>Gradient:</strong> from-blue-200/30 to-cyan-200/30</p>
+                  <p><strong>Hex:</strong> #bfdbfe4d → #a5f3fc4d</p>
+                  <p><strong>Blur:</strong> blur-3xl (48px)</p>
+                  <p><strong>Shape:</strong> rounded-full</p>
+                </div>
+              </div>
+
+              {/* Purple Gradient Blob */}
+              <div className="bg-white border border-gray-200 rounded-2xl p-6">
+                <div className="relative h-32 bg-gray-50 rounded-lg overflow-hidden mb-4">
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-lg"></div>
+                </div>
+                <h4 className="font-semibold mb-2">Purple Gradient Blob</h4>
+                <div className="text-sm space-y-1">
+                  <p><strong>Size:</strong> 256px × 256px (w-64 h-64)</p>
+                  <p><strong>Position:</strong> Centered (top-1/2 left-1/2)</p>
+                  <p><strong>Gradient:</strong> from-purple-200/20 to-pink-200/20</p>
+                  <p><strong>Hex:</strong> #e9d5ff33 → #fbcfe833</p>
+                  <p><strong>Blur:</strong> blur-2xl (40px)</p>
+                  <p><strong>Shape:</strong> rounded-full</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CSS Implementation */}
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-4 text-gray-800">CSS Implementation</h3>
+            <div className="bg-gray-900 text-white p-6 rounded-lg overflow-x-auto">
+              <h4 className="text-lg font-semibold mb-4 text-blue-400">Pure CSS Version:</h4>
+              <pre className="text-sm text-gray-300 whitespace-pre-wrap">
+{`.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+}
+
+.gradient-blob-1 {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  width: 288px;
+  height: 288px;
+  background: linear-gradient(135deg, rgba(254, 215, 170, 0.3) 0%, rgba(254, 202, 202, 0.3) 100%);
+  border-radius: 50%;
+  filter: blur(48px);
+}
+
+.gradient-blob-2 {
+  position: absolute;
+  bottom: 80px;
+  right: 40px;
+  width: 384px;
+  height: 384px;
+  background: linear-gradient(135deg, rgba(191, 219, 254, 0.3) 0%, rgba(165, 243, 252, 0.3) 100%);
+  border-radius: 50%;
+  filter: blur(48px);
+}
+
+.gradient-blob-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 256px;
+  height: 256px;
+  background: linear-gradient(135deg, rgba(233, 213, 255, 0.2) 0%, rgba(251, 207, 232, 0.2) 100%);
+  border-radius: 50%;
+  filter: blur(40px);
+}`}
+              </pre>
+            </div>
+          </div>
+
+          {/* Responsive Considerations */}
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-4 text-gray-800">Responsive Considerations</h3>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+              <h4 className="font-semibold mb-3 text-blue-900">Mobile Adjustments:</h4>
+              <div className="space-y-2 text-sm text-blue-800">
+                <p>• <strong>Blob Sizes:</strong> Reduce by 25-30% on mobile (w-56 h-56 instead of w-72 h-72)</p>
+                <p>• <strong>Positioning:</strong> Adjust positions to prevent overflow (top-10 left-5 instead of top-20 left-10)</p>
+                <p>• <strong>Blur Amount:</strong> Reduce blur slightly for better performance (blur-2xl instead of blur-3xl)</p>
+                <p>• <strong>Opacity:</strong> Consider reducing opacity on mobile for better text readability</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Performance Tips */}
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-4 text-gray-800">Performance & Best Practices</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+                <h4 className="font-semibold mb-3 text-green-900">✅ Do's</h4>
+                <ul className="space-y-2 text-sm text-green-800">
+                  <li>• Use <code>transform</code> for positioning when possible</li>
+                  <li>• Apply <code>will-change: transform</code> for animated elements</li>
+                  <li>• Use <code>overflow: hidden</code> on parent container</li>
+                  <li>• Test blur performance on lower-end devices</li>
+                  <li>• Use <code>backdrop-filter</code> sparingly</li>
+                </ul>
+              </div>
+              
+              <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+                <h4 className="font-semibold mb-3 text-red-900">❌ Don'ts</h4>
+                <ul className="space-y-2 text-sm text-red-800">
+                  <li>• Don't use too many blur elements (max 3-4)</li>
+                  <li>• Avoid excessive blur values (>60px)</li>
+                  <li>• Don't animate blur properties</li>
+                  <li>• Avoid complex gradients with many stops</li>
+                  <li>• Don't forget z-index management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Alternative Variations */}
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-4 text-gray-800">Alternative Background Variations</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Subtle Version */}
+              <div className="relative h-48 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 overflow-hidden">
+                <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-orange-100/20 to-red-100/20 rounded-full blur-2xl"></div>
+                <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-blue-100/20 to-cyan-100/20 rounded-full blur-2xl"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <h4 className="font-semibold text-gray-900">Subtle Version</h4>
+                    <p className="text-sm text-gray-600">Lower opacity (10-20%)</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Vibrant Version */}
+              <div className="relative h-48 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 overflow-hidden">
+                <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-orange-300/40 to-red-300/40 rounded-full blur-2xl"></div>
+                <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-blue-300/40 to-cyan-300/40 rounded-full blur-2xl"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <h4 className="font-semibold text-gray-900">Vibrant Version</h4>
+                    <p className="text-sm text-gray-600">Higher opacity (40-50%)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Brand Colors */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-gray-900">Brand Colors</h2>
