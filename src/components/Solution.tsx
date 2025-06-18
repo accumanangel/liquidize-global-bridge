@@ -25,14 +25,12 @@ const Solution = () => {
             {/* What is Liquitize */}
             <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">What is Liquitize?</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-600 leading-relaxed">
                 Liquitize is the world's first blockchain protocol specifically designed for the diaspora community. 
                 We understand that millions of people living abroad own valuable properties, land, and businesses 
-                in their home countries that remain financially inaccessible when they need capital most.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Our revolutionary platform bridges this gap by tokenizing your real-world assets into LQT 
-                (Liquitize Tokens) on the blockchain, instantly unlocking their value for global financial access.
+                in their home countries that remain financially inaccessible when they need capital most. Our revolutionary 
+                platform bridges this gap by tokenizing your real-world assets into LQT (Liquitize Tokens) on the blockchain, 
+                instantly unlocking their value for global financial access.
               </p>
             </div>
 
