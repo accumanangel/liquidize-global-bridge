@@ -205,7 +205,7 @@ const StyleGuide = () => {
                 <h4 className="font-semibold mb-3 text-red-900">❌ Don'ts</h4>
                 <ul className="space-y-2 text-sm text-red-800">
                   <li>• Don't use too many blur elements (max 3-4)</li>
-                  <li>• Avoid excessive blur values (>60px)</li>
+                  <li>• Avoid excessive blur values ({'>'} 60px)</li>
                   <li>• Don't animate blur properties</li>
                   <li>• Avoid complex gradients with many stops</li>
                   <li>• Don't forget z-index management</li>
